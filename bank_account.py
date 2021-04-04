@@ -14,7 +14,7 @@ class BankAccount:
     
     def withdraw(self, withdraw_amount):
         if withdraw_amount > self.balance:
-            print("Invalid transaction: not enough funds to withdraw $50.")
+            print(f"Invalid transaction: not enough funds to withdraw ${withdraw_amount}.")
         else:
             self.balance = self.balance - withdraw_amount
             print(self.balance)
